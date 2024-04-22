@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { ServizioService } from '../servizio.service';
+
 
 @Component({
   selector: 'app-list',
@@ -9,5 +11,7 @@ import { Component } from '@angular/core';
   styleUrl: './list.component.css'
 })
 export class ListComponent {
+  
 
+    constructor(public provaService: ServizioService){}
 }

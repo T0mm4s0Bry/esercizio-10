@@ -1,13 +1,14 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component,Output } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { HomeComponent } from '../home/home.component';
 
 @Component({
   selector: 'app-navigation',
   standalone: true,
-  imports: [NavigationComponent, CommonModule],
+  imports: [HomeComponent, CommonModule, RouterOutlet],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.css'
 })
 export class NavigationComponent {
-
 }
