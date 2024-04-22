@@ -1,0 +1,13 @@
+import { Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { MostreComponent } from './mostre/mostre.component';
+import { ListComponent } from './list/list.component';
+import { NavigationComponent } from './navigation/navigation.component';
+
+export const routes: Routes = [
+    {path: 'Home', component: HomeComponent},
+    {path: 'List', component: ListComponent},
+    {path: 'Mostre', component: MostreComponent},
+    {path: 'Navigation', component: NavigationComponent},
+
+];

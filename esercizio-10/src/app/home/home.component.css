@@ -1,0 +1,10 @@
+.sfondo{
+    background-image: url("https://www.villegiardini.it/wp-content/uploads/2023/03/Medium-Fortunato-Depero-Gratticieli-e-tunnel-Wolkenkrabbers-en-tunnels-Skyscrapers-and-Tunnels-1930.jpeg");
+    background-size: cover;
+    background-position: center center;
+    height: 1000px;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
