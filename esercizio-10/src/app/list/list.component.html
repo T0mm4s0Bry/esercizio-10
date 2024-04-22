@@ -4,11 +4,13 @@
   <div class="card-container">
     <div class="card" *ngFor="let element of provaService.mostre index as i" [ngClass]="{'card-marte': element.nome === 'marte', 'card-saturno': element.nome === 'saturno','card-sole': element.nome === 'sole','card-urano': element.nome === 'urano','card-titano': element.nome === 'titano','card-plutone': element.nome === 'plutone','card-ROXs': element.nome === 'ROXs 42 Rb',}">
       <div class="card-header" >
-        <img class="card-img-top" src="" alt="Card image">
+        <img class="card-img-top" src="{{element.immagine}}" alt="Card image">
           <h4 class="card-title" align="center"><strong>{{element.nome}}</strong></h4>
       </div>
           <div class="card-body" >
-            <p class="card-text"><strong>SISTEMA SOLARE DI APPARTENENZA:</strong>{{element.sistemasolare}}</p>
+            <p class="card-text"><strong>NOME ARTISTA:</strong>{{element.artista}}</p>
+            <p class="card-text"><strong>DESCRIZIONE:</strong>{{element.descrizione}}</p>
+            <p class="card-text"><strong>DATE:</strong>{{element.date}}</p>
           </div>
     </div>
   </div>
