@@ -2,9 +2,9 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
 <div class="container">
   <div class="card-container">
-    <div class="card" *ngFor="let element of provaService.mostre index as i" [ngClass]="{'card-marte': element.nome === 'marte', 'card-saturno': element.nome === 'saturno','card-sole': element.nome === 'sole','card-urano': element.nome === 'urano','card-titano': element.nome === 'titano','card-plutone': element.nome === 'plutone','card-ROXs': element.nome === 'ROXs 42 Rb',}">
+    <div class="card card-rimpicciolita d-flex justify-content-center align-items-center" *ngFor="let element of provaService.mostre index as i">
       <div class="card-header" >
-        <img class="card-img-top" src="{{element.immagine}}" alt="Card image">
+        <img class="card-img-top" style="width: 400px;" align="center"  src="{{element.immagine}}" alt="Card image">
           <h4 class="card-title" align="center"><strong>{{element.nome}}</strong></h4>
       </div>
           <div class="card-body" >
@@ -14,5 +14,7 @@
           </div>
     </div>
   </div>
+  <button type="button" class="btn " style="margin-left: 45%; background-color: greenyellow;" (click)="mostre()">più informazioni</button>
 </div>
+<p></p>
     
