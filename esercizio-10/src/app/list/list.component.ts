@@ -14,4 +14,8 @@ export class ListComponent {
   
 
     constructor(public provaService: ServizioService){}
+
+    mostre(id:any){
+      window.location.href= '/Mostra/' + id
+    }
 }
